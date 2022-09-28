@@ -1,3 +1,5 @@
 VIA_ENABLE = no
-LTO_ENABLE = yes
+# LTO_ENABLE = yes
 CAPS_WORD_ENABLE = yes
+MOUSEKEY_ENABLE = no
+
