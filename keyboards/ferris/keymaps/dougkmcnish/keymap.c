@@ -30,6 +30,8 @@ enum ferris_tap_dances {
 #define OSM_LALT OSM(MOD_LALT)
 #define OSL_AJST OSL(3)
 #define AJST_TOG TG(3)
+#define LOW_TOG  TG(1)
+#define RAI_TOG  TG(2)
 
 /*
 COMB(combo_lq_ent,        KC_ENT,        KC_L, KC_QUOT)
@@ -48,15 +50,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LOWER] = LAYOUT( /* [> LOWER <] */
        KC_1,    KC_2,    KC_3,    KC_4,    KC_5,            KC_6,    KC_7,    KC_8,    KC_9,    KC_0,
-     KC_GRV, _______, KC_BTN1, KC_BTN2, KC_PGUP,         KC_LEFT, KC_DOWN,   KC_UP, KC_RGHT, KC_SCLN,
-    _______, _______, _______, _______, KC_PGDN,         KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, KC_TILD,
+    _______, _______, KC_BTN2, KC_BTN1, KC_PGUP,         KC_LEFT, KC_DOWN,   KC_UP, KC_RGHT, KC_SCLN,
+    _______, _______, _______, LOW_TOG, KC_PGDN,         KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, KC_TILD,
                                _______, _______,         _______, _______
   ),
 
   [_RAISE] = LAYOUT( /* [> RAISE <] */
     KC_EXLM,    KC_AT,  KC_HASH,  KC_DLR,  KC_PERC,       KC_CIRC, KC_AMPR,  KC_ASTR, KC_LPRN, KC_RPRN,
     KC_CAPS, OSM_LALT, OSM_LGUI, _______, OSL_AJST,       KC_MINS,  KC_EQL,  KC_LBRC, KC_RBRC, KC_BSLS,
-    _______,  _______,  _______, _______, AJST_TOG,       KC_UNDS, KC_PLUS,  _______, _______,   RESET,
+    _______,  _______,  _______, LOW_TOG, AJST_TOG,       KC_UNDS, KC_PLUS,  _______, _______,   RESET,
                                  _______,  _______,       _______, _______
   ),
 
