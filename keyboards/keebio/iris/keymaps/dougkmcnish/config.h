@@ -20,3 +20,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define USE_I2C
 #define EE_HANDS
 #define DOUBLE_TAP_SHIFT_TURNS_ON_CAPS_WORD
+#define COMBO_VARIABLE_LEN
+//#define COMBO_TERM 50

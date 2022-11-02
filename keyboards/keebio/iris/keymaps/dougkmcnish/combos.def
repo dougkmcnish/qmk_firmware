@@ -1,0 +1,1 @@
+COMB(combo_lsemi_enter,  KC_ENT, KC_L,  KC_SCLN)
